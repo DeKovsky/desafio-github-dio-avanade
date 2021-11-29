@@ -1,0 +1,21 @@
+cmd
+
+dir - lista de diretórios na pasta que estamos situados
+cls - limpa  a tela
+cd/ - leva a pasta C, a pasta inicial do WIndows
+cd nomePasta - leva a pasta escolhida
+cd.. - volta uma pasta
+Table - completa o nome dos diretórios
+mkdir - cria pastas
+rmdir "nome da pasta" /S /Q - deleta a pasta com todo o seu conteúdo
+echo "texto dentro do arquivo" > "nome do arquivo".extensão -- salva um texto criando um novo arquivo.
+del "nome da pasta" -- apaga todos os arquivos dentro da pasta.
+
+Windows        Linux
+cd		cd
+dir	      	ls    
+mkdir		mkdir
+del/rmdir	rm / rf
+
+
+obs: Se após digital algum comando não aparecer nenhum erro é porque o comando foi executado corretamente.

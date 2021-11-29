@@ -1,0 +1,42 @@
+openssl sha 1 "nomeArquivo".extensão - criptografa o documento
+
+echo 'conteúdo' | git hash-object --stdin   // devolve o sha1 do conteúdo (stdin)
+
+echo -e 'blob 8\0conteúdo' | openssl sha1 // gera outro tipo de sha, outro conjunto de caractere. o Git manda o objeto para o Blob, tem o tamanho, \0, nome do objeto. o número 8 é o tamanho do objeto.
+
+tree // A tree armazenam Blobs.
+
+Commit // projeto que junta as trees e blobs, autor e mensagem.
+
+------------------------------------------------------------------------------------------
+
+Comandos Git
+
+ls 		//mostra o que está dentro do diretório
+ls -a		//mostra as pastas ocultas dentro do diretório
+mkdir 		//criar diretório
+cd "caminho para pasta" 	//entra no diretório
+clear ou Contrl+L  // limpa a tela
+md (Markdown)	// tipo do arquivo utilizado para criar doc HTML.
+mv arquivo ./diretório/	//move aquivos para determinado diretório/pasta.
+
+git config --global	//configurações no Git, a tag user.email e user.name são necessárias na primeira vez de uso do Git
+git init 	//inicalizar o git e cria um repositório no diretório/pasta
+git add*	//adicionar todos os arquivos criado ou modificados do diretório para o repositório do Git
+git commit -m "nome da comit"	// cria uma commit
+git status
+git congig --global unset user.name ou user.email 	// apagam o nome e email do Git
+git remote add origin https:... 	// move o repositório para o Github. origin foi o apelido escolhido para não ficar digitando todo o https, por convenção utilizasse o origin
+git remote -v 	//lista os repositórios que eu tenho cadastrado
+git push origin master 	//empurra o sistema e arquivos para o github, que vai pedir uma confirmação.
+git pool origin master 	// baixa os arquivos do github para o repositório na sua máquina
+git clone // clona o repositório
+#	// substitui o h1 no código HTML (Ex: h1 #, h2 ##, h3 ###...)
+** text **	//negrito
+_ tex _		//itálico
+- espeaço	// lista
+
+
+
+
+
